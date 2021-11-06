@@ -1,7 +1,8 @@
-document.onkeypress = KeyCheck;   
+document.onkeydown = KeyCheck;   
 document.onkeyup = LogKey;
 
 function KeyCheck(event){
+    event.preventDefault();
     var KeyID = event.keyCode;
     console.log(KeyID);
 
