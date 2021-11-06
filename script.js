@@ -57,6 +57,7 @@ function KeyCheck(event){
                 root.style.setProperty("--a", 1 + "fr");
             }
             aPressed = true;
+            break;
         case 88:
             if(!dPressed){
                 root.style.setProperty("--d", 1 + "fr");
