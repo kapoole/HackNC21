@@ -6,6 +6,12 @@ let root = document.documentElement;
 var cPressed = false;
 var csharpPressed = false;
 
+var gPressed = false;
+var gsharpPressed = false;
+var aPressed = false;
+var asharpPressed = false;
+var bPressed = false;
+
 function KeyCheck(event){
     event.preventDefault();
     var KeyID = event.keyCode;
@@ -16,13 +22,8 @@ function KeyCheck(event){
     switch(KeyID){
         case 90:
             if(!cPressed){
-                console.log("First Press");
-                //document.getElementsByClassName("container").gridTemplateColumns = "1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr";
                 root.style.setProperty('--c', 1 + "fr");
-                
             }
-            console.log(document.getElementsByClassName("container"));
-            //document.body.style.backgroundColor = "rgb(255,0,0)";
             cPressed = true;
             break;
 
@@ -34,10 +35,39 @@ function KeyCheck(event){
             break;
 
         case 66:
-            document.body.style.backgroundColor = "rgb(0,0,255)";
-            console.log(document.body.style.backgroundColor);
+            if(!gPressed){
+                root.style.setProperty("--g", 1 + "fr");
+            }
+            gPressed = true;
+            break;
+
+        case 72:
+            if(!gsharpPressed){
+                root.style.setProperty("--gsharp", 1 + "fr");
+            }
+            gsharpPressed = true;
             break;
         
+        case 78:
+            if(!aPressed){
+                root.style.setProperty("--a", 1 + "fr");
+            }
+            aPressed = true;
+            break;
+        
+        case 74:
+            if(!asharpPressed){
+                root.style.setProperty("--asharp", 1 + "fr");
+            }
+            asharpPressed = true;
+            break;
+
+        case 77:
+            if(!bPressed){
+                root.style.setProperty("--b", 1 + "fr");
+            }
+            bPressed = true;
+            break;    
      }
 }
 
