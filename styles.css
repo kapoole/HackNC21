@@ -15,6 +15,16 @@
     --a: 0fr;
     --asharp: 0fr;
     --b: 0fr;
+    --d: 0fr;
+    --dsharp: 0fr;
+    --e: 0fr;
+    --f: 0fr;
+    --fshsarp: 0fr;
+    --g: 0;;
+    --gsharp: 0;
+    --a: 0;
+    --asharp: 0;
+    --b: 0;
 }
 
 body {
