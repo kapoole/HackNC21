@@ -9,12 +9,12 @@
     --dsharp: 0;
     --e: 0;
     --f: 0;
-    --fshsarp: 0;
-    --g: 0;;
-    --gsharp: 0;
-    --a: 0;
-    --asharp: 0;
-    --b: 0;
+    --fsharp: 0;
+    --g: 0fr;
+    --gsharp: 0fr;
+    --a: 0fr;
+    --asharp: 0fr;
+    --b: 0fr;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: var(--c) var(--csharp) 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr; /* 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr */ /* 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr */
+    grid-template-columns: var(--c) var(--csharp) 0fr 0fr 0fr 0fr 0fr var(--g) var(--gsharp) var(--a) var(--asharp) var(--b); /* 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr */ /* 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr */
     width: 100%;
     height: 100vh;
     line-height: 100vh;
