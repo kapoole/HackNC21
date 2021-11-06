@@ -1,5 +1,76 @@
-
+* {
+    margin: 0;
+}
 body {
     background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr; /* 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr */ /* 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr */
+    width: 100%;
+    height: 100vh;
+    line-height: 100vh;
+    /* justify-content: center;
+    align-items: center;
+    margin: 0 auto; */
+    background-color: powderblue;
+}
+
+
+.note {
+    place-self: stretch stretch;
+    text-align: center;
+    font-size: 5em;
+    color: white;
+    font-family: 'Dongle', sans-serif;
+}
+
+#cNote {
+    background-color: rgb(255,0,0);
+}
+
+#csharpNote {
+    background-color: rgb(255,79,0);
+}
+
+#dNote {
+    background-color: rgb(255,119,0);
+}
+
+#dsharpNote {
+    background-color: rgb(255,158,0);
+}
+
+#eNote {
+    background-color: rgb(255,237,0);
+}
+
+#fNote {
+    background-color: rgb(0,181,0);
+}
+
+#fsharpNote {
+    background-color: rgb(0,209,128);
+}
+
+#gNote {
+    background-color: rgb(0,237,255);
+}
+
+#gsharpNote {
+    background-color: rgb(0,154,213);
+}
+
+#aNote {
+    background-color: rgb(0,71,171);
+}
+
+#asharpNote {
+    background-color: rgb(85,47,114);
+}
+
+#bNote {
+    background-color: rgb(128,36,86);
 }
 
