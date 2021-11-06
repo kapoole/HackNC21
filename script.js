@@ -146,7 +146,33 @@ function LogKey(event){
 
         case 71:
             root.style.setProperty("--fsharp", 0 + "fr");
-            fPressed = false;
+            fsharpPressed = false;
             break;
+
+        case 66:
+            root.style.setProperty("--g", 0 + "fr");
+            gPressed = false;
+            break;
+        
+        case 72:
+            root.style.setProperty("--gsharp", 0 + "fr");
+            gsharpPressed = false;
+            break;
+
+        case 78:
+            root.style.setProperty("--a", 0 + "fr");
+            aPressed = false;
+            break;
+
+        case 74:
+            root.style.setProperty("--asharp", 0 + "fr");
+            asharpPressed = false;
+            break;
+
+        case 77:
+            root.style.setProperty("--b", 0 + "fr");
+            bPressed = false;
+            break;
+
     }
 }
