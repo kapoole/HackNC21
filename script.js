@@ -10,7 +10,6 @@ var dsharpPressed = false;
 var ePressed = false;
 var fPressed = false;
 var fsharpPressed = false;
-
 var gPressed = false;
 var gsharpPressed = false;
 var aPressed = false;
