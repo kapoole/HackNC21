@@ -5,11 +5,11 @@
 :root{
     --c: 0fr;
     --csharp: 0fr;
-    --d: 0;
-    --dsharp: 0;
-    --e: 0;
-    --f: 0;
-    --fshsarp: 0;
+    --d: 0fr;
+    --dsharp: 0fr;
+    --e: 0fr;
+    --f: 0fr;
+    --fshsarp: 0fr;
     --g: 0;;
     --gsharp: 0;
     --a: 0;
@@ -23,7 +23,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: var(--c) var(--csharp) 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr; /* 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr */ /* 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr */
+    grid-template-columns: var(--c) var(--csharp) var(--d) var(--dsharp) var(--e) var(--f) var(--fsharp) 0fr 0fr 0fr 0fr 0fr; /* 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr */ /* 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr */
     width: 100%;
     height: 100vh;
     line-height: 100vh;

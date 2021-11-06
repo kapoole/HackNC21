@@ -5,6 +5,11 @@ let root = document.documentElement;
 
 var cPressed = false;
 var csharpPressed = false;
+var dPressed = false;
+var dsharpPressed = false;
+var ePressed = false;
+var fPressed = false;
+var fsharpPressed = false;
 
 function KeyCheck(event){
     event.preventDefault();
@@ -16,13 +21,8 @@ function KeyCheck(event){
     switch(KeyID){
         case 90:
             if(!cPressed){
-                console.log("First Press");
-                //document.getElementsByClassName("container").gridTemplateColumns = "1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr";
-                root.style.setProperty('--c', 1 + "fr");
-                
+                root.style.setProperty('--c', 1 + "fr");   
             }
-            console.log(document.getElementsByClassName("container"));
-            //document.body.style.backgroundColor = "rgb(255,0,0)";
             cPressed = true;
             break;
 
@@ -33,10 +33,41 @@ function KeyCheck(event){
             csharpPressed = true;
             break;
 
-        case 66:
-            document.body.style.backgroundColor = "rgb(0,0,255)";
-            console.log(document.body.style.backgroundColor);
+        case 88:
+            if(!dPressed){
+                root.style.setProperty("--d", 1 + "fr");
+            }
+            dPressed = true;
             break;
+
+        case 68:
+            if(!dsharpPressed){
+                root.style.setProperty("--dsharp", 1 + "fr");
+            }
+            dsharpPressed = true;
+            break;
+
+        case 67:
+            if(!ePressed){
+                root.style.setProperty("--e", 1 + "fr");
+            }
+            ePressed = true;
+            break;
+
+        case 86:
+            if(!fPressed){
+                root.style.setProperty("--f", 1 + "fr");
+            }
+            fPressed = true;
+            break;
+
+        case 71:
+            if(!fsharpPressed){
+                root.style.setProperty("--fsharp", 1 + "fr");
+            }
+            fsharpPressed = true;
+            break;
+            
         
      }
 }
@@ -54,6 +85,31 @@ function LogKey(event){
         case 83:
             root.style.setProperty("--csharp", 0 + "fr");
             csharpPressed = false;
+            break;
+
+        case 88:
+            root.style.setProperty("--d", 0 + "fr");
+            dPressed = false;
+            break;
+
+        case 68:
+            root.style.setProperty("--dsharp", 0 + "fr");
+            dsharpPressed = false;
+            break;
+
+        case 67:
+            root.style.setProperty("--e", 0 + "fr");
+            ePressed = false;
+            break;
+
+        case 86:
+            root.style.setProperty("--f", 0 + "fr");
+            fPressed = false;
+            break;
+
+        case 71:
+            root.style.setProperty("--fsharp", 0 + "fr");
+            fPressed = false;
             break;
     }
 }
