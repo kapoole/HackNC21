@@ -37,7 +37,7 @@ body {
 .note {
     place-self: stretch stretch;
     text-align: center;
-    font-size: 5em;
+    font-size: 20em;
     color: white;
     font-family: 'Dongle', sans-serif;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 #fNote {
-    background-color: rgb(0,181,0);
+    background-color: rgb(128,209,0); /* rgb(0,181,0) */
 }
 
 #fsharpNote {
