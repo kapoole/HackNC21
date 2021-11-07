@@ -3,14 +3,15 @@
 }
 
 .container {
-    height: 84vh;
-    background-color: powderblue;
+    height: 78vh;
+    background-color: rgb(255, 255, 255);
     font-size: 1em;
     margin: auto;
     max-width: 144em;
     padding-left: 16em;
-    padding-top: 8vh;
+    padding-top: 14vh;
     text-align: center;
+    z-index: 1;
 }
 
 #nav{
@@ -57,8 +58,12 @@ h1 {
     font-family: 'Dongle', sans-serif;
     font-size: 15em;
     margin: 0 auto 0 -1em;
+}
+
+#notes {
     z-index: 1;
 }
+
 /* .stave {
     /*   display: flex; *
     display: grid;
@@ -219,7 +224,7 @@ background-image: url("img/stave-header-time-signature.svg");
     left: 0;
     opacity: 0;
     animation-name: disappear;
-    animation-duration: 5s;
+    animation-duration: 3s;
     display: block;
     overflow: hidden;
     z-index: 0;

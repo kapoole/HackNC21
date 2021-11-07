@@ -32,7 +32,7 @@ function ToggleKey(event) {
         let circle = document.createElement("div");
         document.getElementById('circles').appendChild(circle);
         circle.className = 'circle';
-        circle.style.backgroundColor = 'rgb(' + colors[k][0] + ',' + colors[k][1] + ',' + colors[k][2] + ')';
+        circle.style.backgroundColor = 'rgb(' + colors[k% numNotesOctave][0] + ',' + colors[k% numNotesOctave][1] + ',' + colors[k% numNotesOctave][2] + ')';
     }
     let note = document.getElementById('chord');
     note.className = 'quarter-note ' + cssClasses[k];
