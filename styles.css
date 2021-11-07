@@ -17,19 +17,12 @@
     --fsharp: 0fr;
 }
 
-body {
-    background-color: white;
-}
-
 .container {
     display: grid;
-    grid-template-columns: var(--c) var(--csharp) var(--d) var(--dsharp) var(--e) var(--f) var(--fsharp) var(--g) var(--gsharp) var(--a) var(--asharp) var(--b); /* 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr */ /* 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr */
+    grid-template-columns: var(--c) var(--csharp) var(--d) var(--dsharp) var(--e) var(--f) var(--fsharp) var(--g) var(--gsharp) var(--a) var(--asharp) var(--b);
     width: 100%;
     height: 100vh;
     line-height: 100vh;
-    /* justify-content: center;
-    align-items: center;
-    margin: 0 auto; */
     background-color: powderblue;
 }
 
