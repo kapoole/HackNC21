@@ -27,10 +27,19 @@ function ToggleKey(event) {
     let k = keyCodes.indexOf(event.keyCode);
     if (k == -1 || keyIsPressed[k] == isOn) { return; }
     keyIsPressed[k] = isOn;
-    if (isOn) {new Audio("../music notes/" + notesMP3s[k]).play()}
+    if (isOn) {
+        new Audio("../music notes/" + notesMP3s[k]).play();
+        let circle = document.createElement("div");
+        document.getElementById('circles').appendChild(circle);
+        circle.className = 'circle';
+        circle.style.backgroundColor = 'rgb(' + colors[k][0] + ',' + colors[k][1] + ',' + colors[k][2] + ')';
+    }
     let note = document.getElementById('chord');
     note.className = 'quarter-note ' + cssClasses[k];
     document.getElementById('notes').innerHTML = (isOn ? notes[k % numNotesOctave] : "");
+
+    
+//     setTimeout(destroyElement(circle), 5000);
 }
 
 /**
@@ -41,5 +50,9 @@ function ToggleKey(event) {
  * @returns 
  */
 function blend(c1, c2, t=0.5) {
-    return [Math.sqrt((1 - t) * c1[0]^2 + t * c2[0]^2), Math.sqrt((1 - t) * c1[1]^2 + t * c2[1]^2), Math.sqrt((1 - t) * c1[2]^2 + t * c2[2]^2)];
+        return [Math.sqrt((1 - t) * c1[0]^2 + t * c2[0]^2), Math.sqrt((1 - t) * c1[1]^2 + t * c2[1]^2), Math.sqrt((1 - t) * c1[2]^2 + t * c2[2]^2)];
+}
+
+function destroyElement(e) {
+        e.parentElement.removeChild(e);
 }
