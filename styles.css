@@ -37,7 +37,7 @@ body {
 .note {
     place-self: stretch stretch;
     text-align: center;
-    font-size: 20em;
+    font-size: 15em;
     color: white;
     font-family: 'Dongle', sans-serif;
 }
@@ -88,5 +88,9 @@ body {
 
 #bNote {
     background-color: rgb(128,36,86);
+}
+
+.accidentals {
+    font-size: .5em;;
 }
 
