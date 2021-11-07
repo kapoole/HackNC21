@@ -37,7 +37,7 @@ function KeyCheck(event){
                 root.style.setProperty("--csharp", 1 + "fr");
             }
             csharpPressed = true;
-            document.getElementById("csharpNote").innerHTML = "C#"
+            document.getElementById("csharpNote").innerHTML = "C<sup>#</sup>"
             break;
 
         case 66:
@@ -53,7 +53,7 @@ function KeyCheck(event){
                 root.style.setProperty("--gsharp", 1 + "fr");
             }
             gsharpPressed = true;
-            document.getElementById("gsharpNote").innerHTML = "G#"
+            document.getElementById("gsharpNote").innerHTML = "G<sup>#</sup>"
             break;
         
         case 78:
@@ -76,7 +76,7 @@ function KeyCheck(event){
                 root.style.setProperty("--dsharp", 1 + "fr");
             }
             dsharpPressed = true;
-            document.getElementById("dsharpNote").innerHTML = "D#"
+            document.getElementById("dsharpNote").innerHTML = "D<sup>#</sup>"
             break;
 
         case 67:
@@ -100,7 +100,7 @@ function KeyCheck(event){
                 root.style.setProperty("--fsharp", 1 + "fr");
             }
             fsharpPressed = true;
-            document.getElementById("fsharpNote").innerHTML = "F#"
+            document.getElementById("fsharpNote").innerHTML = "F<sup>#</sup>"
             break;
             
         
@@ -109,7 +109,7 @@ function KeyCheck(event){
                 root.style.setProperty("--asharp", 1 + "fr");
             }
             asharpPressed = true;
-            document.getElementById("asharpNote").innerHTML = "A#"
+            document.getElementById("asharpNote").innerHTML = "A<sup>#</sup>"
             break;
 
         case 77:
