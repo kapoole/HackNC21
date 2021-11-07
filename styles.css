@@ -66,6 +66,23 @@ a:active {
     background-color: powderblue;
 }
 
+.container-img {
+    width: 100vw;
+    height: 92vh;
+    background-color: #b6d0e2;
+}
+
+#referenceSheet {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#referenceSheetImg {
+    width: 50%;
+    height: auto;
+}
 
 .note {
     place-self: stretch stretch;
