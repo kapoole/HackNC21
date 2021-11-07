@@ -32,3 +32,14 @@ function ToggleKey(event) {
     note.className = 'quarter-note ' + cssClasses[k];
     document.getElementById('notes').innerHTML = (isOn ? notes[k % numNotesOctave] : "");
 }
+
+/**
+ * 
+ * @param { [r,g,b] } c1 color 1
+ * @param { [r,g,b] } c2 color 2
+ * @param { number } t value between 0 and 1 representing point in blend between colors 1 and 2
+ * @returns 
+ */
+function blend(c1, c2, t=0.5) {
+    return [Math.sqrt((1 - t) * c1[0]^2 + t * c2[0]^2), Math.sqrt((1 - t) * c1[1]^2 + t * c2[1]^2), Math.sqrt((1 - t) * c1[2]^2 + t * c2[2]^2)];
+}
