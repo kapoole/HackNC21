@@ -7,6 +7,7 @@ let root = document.documentElement;
 var keyCodes = [90, 83, 88, 68, 67, 86, 71, 66, 72, 78, 74, 77];
 var notes = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
 var notesID = ["cNote", "csharpNote", "dNote", "dsharpNote", "eNote", "fNote", "fsharpNote", "gNote", "gsharpNote", "aNote", "asharpNote", "bNote"];
+var notesMP3s = ["Piano.C4.mp3", "Piano.C#4.mp3", "Piano.D4.mp3", "Piano.D#4.mp3", "Piano.E4.mp3", "Piano.F4.mp3", "Piano.F#4.mp3", "Piano.G4.mp3", "Piano.G#4.mp3", "Piano.A4", "Piano.A#4", "Piano.B4"]
 // boolean array
 var keyIsPressed = Array(keyCodes.length).fill(false);
 var cssProperties = ['--c', '--csharp', '--d', '--dsharp', '--e', '--f', '--fsharp', '--g', '--gsharp', '--a', '--asharp', '--b'];
@@ -23,5 +24,6 @@ function ToggleKey(event) {
     keyIsPressed[k] = isOn;
     root.style.setProperty(cssProperties[k], (isOn ? 1 : 0) + 'fr');
     document.getElementById(notesID[k]).innerHTML = (isOn ? notes[k] : "");
+    if (isOn) {new Audio(notesMP3s[k]).play()}
     console.log(cssProperties[k] + ' ' + event.keyCode + ' ' + event.type);
 }
