@@ -22,10 +22,6 @@ function ToggleKey(event) {
     if (k == -1 || keyIsPressed[k] == isOn) { return; }
     keyIsPressed[k] = isOn;
     root.style.setProperty(cssProperties[k], (isOn ? 1 : 0) + 'fr');
-    if(isOn){
-        document.getElementById(notesID[k]).innerHTML = notes[k];
-    }else{
-        document.getElementById(notesID[k]).innerHTML = "";
-    }
+    document.getElementById(notesID[k]).innerHTML = (isOn ? notes[k] : "");
     console.log(cssProperties[k] + ' ' + event.keyCode + ' ' + event.type);
 }
