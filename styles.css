@@ -17,12 +17,52 @@
     --fsharp: 0fr;
 }
 
+#nav{
+    width: 100vw;
+    height: 8vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-item {
+    font-size: 5em;
+    color: white;
+    font-family: 'Dongle', sans-serif;
+}
+
+#freePlay {
+    color: powderblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
 .container {
     display: grid;
     grid-template-columns: var(--c) var(--csharp) var(--d) var(--dsharp) var(--e) var(--f) var(--fsharp) var(--g) var(--gsharp) var(--a) var(--asharp) var(--b);
     width: 100%;
-    height: 100vh;
-    line-height: 100vh;
+    height: 92vh;
+    line-height: 91vh;
     background-color: powderblue;
 }
 
